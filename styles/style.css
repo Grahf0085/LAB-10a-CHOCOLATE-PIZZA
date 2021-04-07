@@ -57,7 +57,10 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
+    width: 100%;
+    
 }
+   
 
 
 h2 {
@@ -83,13 +86,7 @@ p {
     margin: var(--gutter);
     text-indent: 25px;
 }
-  
-footer {
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    background-color: var(--color3);
-}
+
 
 footer h2 {
     font-weight: bold;
@@ -160,6 +157,7 @@ h1 {
     justify-content: flex-start;
     align-items: space-between;
     align-content: space-around;
+    box-shadow: 0px 10px 5px 0px lightgray;
 }
 
 .strike {
@@ -178,4 +176,20 @@ h1 {
 
 button {
     background-color: #bc7058;
+}
+
+.stretched-line {
+    border: 0;
+height: 15px;
+background-image: url(/assets/hr-img.png);
+background-repeat: repeat;
+margin-top: 30px;
+margin-bottom: 15px;
+}
+
+
+.the-line {
+    background-image: url(/assets/small-logo.png);
+    background-repeat: no-repeat;
+    height: 20px;
 }
