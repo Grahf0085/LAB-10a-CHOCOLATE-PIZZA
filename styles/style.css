@@ -14,27 +14,22 @@ body {
     --color5: hsla(224, 40%, 79%, 1); */
     
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
-    --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    display:flex;
+    justify-content: center;
 
-    
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
     background-color: var(--color5);
-    width: 1000px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -62,13 +57,11 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
-    box-shadow: var(--shadow);
 }
 
 
 h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .gutter-right {
@@ -82,21 +75,24 @@ h2 {
 .icons {
     grid-column: 3;
     grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 p {
     margin: var(--gutter);
+    text-indent: 25px;
 }
   
 footer {
-    position: fixed;
     width: 100%;
     bottom: 0;
-    height: var(--footer-height);
     display: flex;
-    justify-content: flex-end;
     background-color: var(--color3);
-    box-shadow: var(--shadow);
+}
+
+footer h2 {
+    font-weight: bold;
 }
   
   @keyframes pulse {
@@ -128,9 +124,58 @@ footer {
     
   }
 
-  figcaption {
-    padding: 1px;
-    text-align: right;
+figure {
+    text-align: left;
     grid-column: 1;
     grid-row: 1;
+}
+
+h1 {
+    float: left;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.body-class {
+    width: 85%;
+}
+
+.line-picture {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.pizza-image {
+    width: 100%;
+}
+
+.recipe {
+    background-image: url('/assets/list-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: space-between;
+    align-content: space-around;
+}
+
+.strike {
+    text-decoration-line: line-through;
+}
+
+.first-recipe {
+    flex-wrap: wrap;
+
+}
+
+.second-recipe {
+    flex-wrap: wrap;
+
+}
+
+button {
+    background-color: #bc7058;
 }
