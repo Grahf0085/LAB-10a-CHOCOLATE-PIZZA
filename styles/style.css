@@ -48,7 +48,10 @@ section {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
+
     justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
@@ -76,8 +79,9 @@ h2 {
     animation: pulse 5s infinite ease-in-out;
 }
 
-header img {
-    
+.icons {
+    grid-column: 3;
+    grid-row: 1;
 }
 
 p {
@@ -115,9 +119,18 @@ footer {
   }
 
   img {
-      margin: 5px;
+      margin: 1px;
   }
 
   .top-left {
-      
+    grid-column: 1;
+    grid-row: 1;
+    
   }
+
+  figcaption {
+    padding: 1px;
+    text-align: right;
+    grid-column: 1;
+    grid-row: 1;
+}
